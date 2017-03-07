@@ -1,5 +1,15 @@
 # Docker uwegerdes/nginx
 
+## Build
+
+Build the image with (mind the dot):
+
+```bash
+$ docker build -t uwegerdes/nginx .
+```
+
+## Usage
+
 Make sure you run `uwegerdes/php-fpm` and the other containers before running nginx.
 
 Now run the nginx container, port 3080 on localhost will be connected to the nginx container (change it as you like):
