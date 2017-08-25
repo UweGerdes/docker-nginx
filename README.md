@@ -45,4 +45,4 @@ Open [http://localhost:3080/](http://localhost:3080/) in your preferred browser 
 
 ## Known Problems
 
-Internal redirection (e.g. rewriting, index.php in subdirectories) is not possible with this sites-enabled/default - the external port 3080 is lost and it is not known inside the container.
+Internal redirection (e.g. rewriting, index.php in subdirectories) is not possible with this sites-enabled/default - see my frontend-development project for a [default configuration](https://github.com/UweGerdes/frontend-development/tree/master/src/nginx/sites-available/default) with index.php support in a subdirectory.
