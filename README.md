@@ -42,3 +42,7 @@ Hit CTRL-C to stop the tail command and CTRL-D to exit the bash.
 ## Open Page
 
 Open [http://localhost:3080/](http://localhost:3080/) in your preferred browser - you should see the /htdocs/index.html content. Change the file and reload it.
+
+## Known Problems
+
+Internal redirection (e.g. rewriting, index.php in subdirectories) is not possible with this sites-enabled/default - the external port 3080 is lost and it is not known inside the container.
