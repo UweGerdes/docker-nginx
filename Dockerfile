@@ -1,3 +1,5 @@
+# nginx docker image with some settings
+
 FROM uwegerdes/baseimage
 MAINTAINER Uwe Gerdes <entwicklung@uwegerdes.de>
 
@@ -14,3 +16,4 @@ COPY sites-enabled/default /etc/nginx/sites-enabled/default
 EXPOSE 80
 
 CMD ["/usr/sbin/nginx"]
+

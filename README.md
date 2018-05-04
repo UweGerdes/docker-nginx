@@ -16,7 +16,7 @@ Now run the nginx container, port 3080 on localhost will be connected to the ngi
 
 ```bash
 $ docker run -d \
-	-p 3080:80 \
+	-p 8080:80 \
 	--volumes-from data \
 	--volumes-from php-fpm \
 	--name nginx \
@@ -41,8 +41,9 @@ Hit CTRL-C to stop the tail command and CTRL-D to exit the bash.
 
 ## Open Page
 
-Open [http://localhost:3080/](http://localhost:3080/) in your preferred browser - you should see the /htdocs/index.html content. Change the file and reload it.
+Open [http://localhost:3080/](http://localhost:8080/) in your preferred browser - you should see the /htdocs/index.html content. Change the file and reload it.
 
 ## Known Problems
 
 Internal redirection (e.g. rewriting, index.php in subdirectories) is not possible with this sites-enabled/default - see my frontend-development project for a [default configuration](https://github.com/UweGerdes/frontend-development/tree/master/src/nginx/sites-available/default) with index.php support in a subdirectory.
+
